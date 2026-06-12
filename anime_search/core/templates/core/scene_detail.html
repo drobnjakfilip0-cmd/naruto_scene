@@ -28,7 +28,9 @@
         </div>
 
         <div class="media">
-            <img src="{{ scene.image.url }}" class="scene-image">
+            {% if scene.image %}
+                <img src="{{ scene.image.url }}" class="scene-image">
+            {% endif %}
         </div>
 
         <div class="grid">
@@ -47,7 +49,7 @@
                 <div class="label">TAGS</div>
 
                 <div class="tags">
-                    {% for tag in scene.tags %}
+                    {% for tag in scene.get_tags %}
                         <span class="tag">{{ tag }}</span>
                     {% endfor %}
                 </div>
