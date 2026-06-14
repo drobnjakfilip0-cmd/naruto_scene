@@ -816,7 +816,7 @@ body {
 .tags {
     display: flex;
     flex-wrap: wrap;
-   
+    gap: 8px;
 }
 
 /* CYBER PILL TAGS - CLEAN TEXT */
@@ -824,26 +824,22 @@ body {
     display: inline-flex;
     align-items: center;
 
-   
+    padding: 4px 12px;
 
-    font-size: 19px;
+    font-size: 13px;
     font-weight: 600;
 
-    /* NORMALNO PISANJE - bez razdvajanja */
     letter-spacing: 0;
     text-transform: none;
 
     color: #c4b5fd;
 
-    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-family: 'Orbitron', 'Space Grotesk', system-ui, sans-serif;
 
     border-radius: 999px;
 
-    /* cyber gradient base */
-  
-
-    /* modern font feel */
-    font-family: 'Orbitron', 'Space Grotesk', system-ui, sans-serif;
+    background: rgba(124, 58, 237, 0.12);
+    border: 1px solid rgba(124, 58, 237, 0.3);
 
     transition: all 0.2s ease;
 
